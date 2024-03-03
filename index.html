@@ -9,26 +9,28 @@
 </head>
 <body class="">
     <section class="main-home px-[5vw] h-[93vh] py-10">
-        <nav class="whitespace-nowrap flex items-center ">
-            <div class="navbar flex gap-[8vw] items-baseline"> 
+        <nav class="whitespace-nowrap flex items-center">
+            <div class="navbar flex xl:gap-[8vw] sm:gap-40 items-baseline"> 
                     <div class="left-nav text-cyan-700 font-bold text-[30px]">
                         StudentRooms
                     </div>
-                    <div class="navlinks flex gap-5 text-grey-100">
+                    <div class="navlinks hidden xl:flex gap-5 text-grey-100">
                         <a href="#" class="active">Home</a>
                         <a href="#" class="">Rooms</a>
                         <a href="#" class="">Pricing</a>
                         <a href="#" class="">About</a>
                         <a href="#" class="">Contact</a>
                     </div>    
-                </div>
+                    <div id="menuBtn" onclick="memuVisible()" class="menu cursor-pointer xl:hidden mt-3 ">
+                        <box-icon name='menu'></box-icon>
+                    </div>
             </div>
-            <div class="flex">
+            
+            
                 <!-- Right sidebar -->
-                <div id="right" class="w-[35vw] gap-4 le text-white flex text-sm bg-blue-900 absolute -z-100 tracking-wider right-0 top-0 h-[92vh] py-10 -pl-10 justify-center">
+            <div id="right" class="w-[35vw] gap-4 text-white flex text-sm bg-blue-900 absolute -z-100 tracking-wider right-0 top-0 h-[92vh] py-10 -pl-10 py-[55px] justify-center">
                     <div class="h-[65px]"><a href="./pages/login.html" class="button px-14 py-[14px] items-center justify-center  hover:bg-white hover:text-blue-900">Login</a></div>
                     <div class=""><a href="./pages/SignIn.html" class="button px-10 py-3 items-center justify-center border-solid border-2 border-white-50 hover:bg-white hover:text-blue-900" >Sign Up</a></div>
-                </div>
             </div>
         </nav>
         <div id="main-t" class="text-main mt-20 text-[4.5vw] tracking-wider font-semibold">
@@ -39,7 +41,7 @@
             <div class="get-started flex justify-center shadow-md items-center hover:bg-blue-800 px-8 py-[13px] text-[15px] font-semibold text-white hover:cursor-pointer bg-blue-900 border-solid w-40"><a href="#">Get Started</a></div>
             <div class="an text-blue-800 underline text-[15px] "><a href="getapps">Get The Apps</a></div>
         </div>
-        <div class="absoImg absolute top-36 right-[200px] object-cover h-[200px]">
+        <div class="absoImg absolute hidden xl:block top-36 right-[200px] object-cover h-[200px]">
             <img id="mbh" class="h-[25vw] -z-5" src="./images/pexels-photo-13871326.jpeg" alt="">
         </div>
 
@@ -91,7 +93,7 @@
                                 <!-- Checkbox -->
                                 <div class="col-span-2">
                                     <input type="checkbox" id="terms" name="terms" class="mr-2">
-                                    <label for="terms" class="text-white mt-4">I agree to the terms of services and privacy of StudentRooms company.</label>
+                                    <label for="terms" class="text-white mt-4">I agree to the <a class="underline">Terms of services</a> and <a href="" class="underline">Privacy policy</a> of <b class="tracking-wide text-lg">StudentRooms</b> company.</label>
                                 </div>
                             </div>
                             <!-- Submit Button -->
@@ -110,6 +112,7 @@
             </div>
         </div>
     </section>
- <script src="script.js"></script>   
+ <script src="script.js"></script>
+ <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>   
 </body>
 </html>

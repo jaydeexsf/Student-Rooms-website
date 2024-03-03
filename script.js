@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
 
-        // Mocking a simple login check (replace with your actual login logic)
         if (email === 'user@example.com' && password === 'user@example.com') {
             // Successful login
             loginMessage.classList.add('hidden');
@@ -52,6 +51,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+const navlinks = document.querySelector('.navlinks');
+const menuBtN = Document
+
+function memuVisible() {
+    navlinks.className = 'flex flex-col bg-blue-500 px-8';
+
+}
+
+function toggle() {
+    
+}
 
 console.log(window.innerWidth);
 console.log('hi');
