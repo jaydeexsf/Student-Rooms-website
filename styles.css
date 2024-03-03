@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    box-sizing: border-box;
+}
+
+/* .navlinks a::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 2px;
+    color: red;
+    background-color: green;
+} */
+
+.hide {
+    display: none;
+    opacity: 0;
+    visibility: collapse;
+}
+
+
+/* .left-nav {
+    font-size: 30px;
+} */
+
+
+/* #right {
+    z-index: -2;
+} */
+
+#main-t {
+    z-index: 1000;
+}
+
+.location {
+    font-family:cursive;
+    font-size: medium;
+}
+
+.ssss {
+    display: flex;
+    align-content: center;
+}
+
+.absoImg {
+    position: absolute;
+    top: 160px; /* Adjust this as needed */
+    right: 15vw; /* Adjust this as needed */
+    z-index: 1;
+    height: 200px; /* Default height */
+    background-position: top;
+}
+
+.absoImg img {
+    height: 30vw; /* 25% of viewport width */
+    width: 31vw;
+    object-fit:cover; /* Maintain aspect ratio and cover container */
+}

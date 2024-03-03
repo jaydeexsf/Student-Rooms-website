@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet">
+    <title>Rooms Rental</title>
+</head>
+<body class="">
+    <section class="main-home px-[5vw] h-[93vh] py-10">
+        <nav class="whitespace-nowrap flex items-center ">
+            <div class="navbar flex gap-[8vw] items-baseline"> 
+                    <div class="left-nav text-cyan-700 font-bold text-[30px]">
+                        StudentRooms
+                    </div>
+                    <div class="navlinks flex gap-5 text-grey-100">
+                        <a href="#" class="active">Home</a>
+                        <a href="#" class="">Rooms</a>
+                        <a href="#" class="">Pricing</a>
+                        <a href="#" class="">About</a>
+                        <a href="#" class="">Contact</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="flex">
+                <!-- Right sidebar -->
+                <div id="right" class="w-[35vw] gap-4 le text-white flex text-sm bg-blue-900 absolute -z-100 tracking-wider right-0 top-0 h-[92vh] py-10 -pl-10 justify-center">
+                    <div class="h-[65px]"><a href="./pages/login.html" class="button px-14 py-[14px] items-center justify-center  hover:bg-white hover:text-blue-900">Login</a></div>
+                    <div class=""><a href="./pages/SignIn.html" class="button px-10 py-3 items-center justify-center border-solid border-2 border-white-50 hover:bg-white hover:text-blue-900" >Sign Up</a></div>
+                </div>
+            </div>
+        </nav>
+        <div id="main-t" class="text-main mt-20 text-[4.5vw] tracking-wider font-semibold">
+            <h1 class="">Quick Access <br>To Get Your Rooms</h1>
+        </div>
+        <div class="small-text w-[40vw] max-w-[430px] tracking-wide"><p class="text-grey-500">Get a wide selection in the best rooms with choices furnished or unfurnished quickly and easily</p></div>
+        <div class="btn-anchor whitespace-nowrap flex items-center gap-8 mt-8">
+            <div class="get-started flex justify-center shadow-md items-center hover:bg-blue-800 px-8 py-[13px] text-[15px] font-semibold text-white hover:cursor-pointer bg-blue-900 border-solid w-40"><a href="#">Get Started</a></div>
+            <div class="an text-blue-800 underline text-[15px] "><a href="getapps">Get The Apps</a></div>
+        </div>
+        <div class="absoImg absolute top-36 right-[200px] object-cover h-[200px]">
+            <img id="mbh" class="h-[25vw] -z-5" src="./images/pexels-photo-13871326.jpeg" alt="">
+        </div>
+
+        <div class="home-images flex mt-[3vw] gap-2 w-[14vw]">
+            <img src="https://th.bing.com/th/id/R.13f3d7ba0255e327629b6d9f016cdd19?rik=DblgIav0MPdGdQ&pid=ImgRaw&r=0" alt="">
+            <img src="https://www.hpdconsult.com/wp-content/uploads/2019/05/1166-B-RENDER-06.jpg" alt="">
+            <img src="https://i.pinimg.com/originals/ec/e5/3c/ece53cf5967ad80ec7faa5bce298644c.jpg" alt="">
+        </div>
+        
+    </section>
+   
+    <section id="" class="dream-room mt-4 h-[100vh] h-[100vh] pl-[5vw]">
+        <div class="first-d flex justify-between items-center">
+            <div class="">
+                <h1 class="text-[50px] font-semibold">Find your Dream Room Now <br>Search & Booking</h1>
+                <p class="w-[500px]">Immediently find your dream room and make varsity experience cooler and more productive than ever before</p>
+            </div>    
+            <img class="w-[30vw] object-bottom object-cover h-[300px]" src="./images/chair-and-table.jpg" alt="" class="side">
+        </div>
+
+        <div class="find-img flex justify-between">
+            <div class="find">
+
+                <div class="location">
+                    <div class="w-[47vw] max-w-[500px]  max-h-[530px] min-w-[300px] min-h-[400px] h-[60vh] flex flex-col items-center justify-center mx-auto text-white px-6 py-8 bg-blue-600 rounded-tl-[50px] rounded-br-[50px] shadow-md">
+                        <h2 class="text-2xl font-bold mb-4 flex justify-center mb-[6vh]">Find a Room</h2>
+                        <form action="/submit" method="POST">
+                            <div class="grid grid-cols-2 gap-[3vw] justify-between items-between">
+                                <!-- Location -->
+                                <div class="w-[full] gap-8 col-span-2 flex items-baseline ">
+                                    <label for="location" class="block text-white">Location</label>
+                                    <select name="location" id="location" class="w-full pl-[10px] py-3 mt-2 bg-blue-500 opacity-90 outline-none focus:border-none focus:outline-none sm:text-sm">
+                                        <option value="Gate-1" selected>Gate 1</option>
+                                        <option value="Gate-2">Gate 2</option>
+                                        <option value="Gate-3">Gate 3</option>
+                                        <option value="motintane">Ga motintane</option>
+                                    </select>
+                                </div>
+                                <!-- Start Date -->
+                                <div>
+                                    <label for="start_date" class="block mt-4 text-white">Start Date</label>
+                                    <input type="date" id="start_date" name="start_date" class="w-full px-4 py-3 mt-2 bg-blue-500 opacity-90 outline-none focus:border-none focus:outline-none sm:text-sm">
+                                </div>
+                                <!-- End Date -->
+                                <div>
+                                    <label for="end_date" class="block text-white mt-4">End Date</label>
+                                    <input type="date" id="end_date" name="end_date" class="w-full px-4 py-3 mt-2 bg-blue-500 opacity-90 outline-none focus:border-none focus:outline-none sm:text-sm">
+                                </div>
+                                <!-- Checkbox -->
+                                <div class="col-span-2">
+                                    <input type="checkbox" id="terms" name="terms" class="mr-2">
+                                    <label for="terms" class="text-white mt-4">I agree to the terms of services and privacy of StudentRooms company.</label>
+                                </div>
+                            </div>
+                            <!-- Submit Button -->
+                            <div class="mt-[4vh] flex justify-center">
+                                <button type="submit" class="w-[90%] px-4 py-3 bg-blue-950 text-white rounded-[2px] cursor-pointer hover:bg-white hover:text-blue-500">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="f-img flex mt-4 gap-4">
+                <img class="w-[21vw] h-[20vw] object-cover" src="./images/sofa.jpg" alt="">
+                <img class="w-[21vw] h-[30vw] object-cover object-bottom" src="./images/singleBedRoom.jpg" alt="">
+            </div>
+        </div>
+    </section>
+ <script src="script.js"></script>   
+</body>
+</html>
