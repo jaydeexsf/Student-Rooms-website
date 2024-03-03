@@ -63,3 +63,12 @@ body {
     width: 31vw;
     object-fit:cover; /* Maintain aspect ratio and cover container */
 }
+
+.navlinks a:hover {
+    color: red; 
+    text-decoration: underline; 
+}
+
+.active {
+    
+}

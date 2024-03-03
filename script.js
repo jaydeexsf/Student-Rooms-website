@@ -52,16 +52,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 const navlinks = document.querySelector('.navlinks');
-const menuBtN = Document
+const menuBtN = document.getElementById('menuBtn');
 
 function memuVisible() {
-    navlinks.className = 'flex flex-col bg-blue-500 px-8';
-
+    navlinks.className = 'flex flex-col gap-[10px] bg-blue-900 absolute text-white left-[5vw] rounded-xl top-[85px] py-4 px-12';
+    navlinks.innerHTML = `  <a href="#" class="active">Home</a>
+                            <a href="#" class="">Rooms</a>
+                            <a href="#" class="">Pricing</a>
+                            <a href="#" class="">About</a>
+                            <a href="#" class="">Contact</a>`
 }
 
-function toggle() {
-    
-}
+menuBtN.click()
+
+
 
 console.log(window.innerWidth);
 console.log('hi');
