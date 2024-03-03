@@ -53,6 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const navlinks = document.querySelector('.navlinks');
 const menuBtN = document.getElementById('menuBtn');
+const menuIcon = document.getElementById('menuIcon');
+const closeIcon= document.getElementById('closeIcon');
 
 function memuVisible() {
     navlinks.className = 'flex flex-col gap-[10px] bg-blue-900 absolute text-white left-[5vw] rounded-xl top-[85px] py-4 px-12';
@@ -61,6 +63,9 @@ function memuVisible() {
                             <a href="#" class="">Pricing</a>
                             <a href="#" class="">About</a>
                             <a href="#" class="">Contact</a>`
+
+    closeIcon.classList.remove('hidden');
+    menuIcon.classList.add('hidden');
 }
 
 menuBtN.click()
