@@ -68,6 +68,10 @@ function memuVisible() {
     menuIcon.classList.add('hidden');
 }
 
+// function menuInVisible () {
+//     navlinks.classList.add('hidden');
+// }
+
 menuBtN.click()
 
 
