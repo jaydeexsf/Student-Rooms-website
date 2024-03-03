@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Rooms Rental</title>
 </head>
 <body class="">
     <section class="main-home px-[5vw] h-[93vh] py-10">
         <nav class="whitespace-nowrap flex items-center">
-            <div class="navbar flex xl:gap-[8vw] sm:gap-40 items-baseline"> 
-                    <div class="left-nav text-cyan-700 font-bold text-[30px]">
+            <div class="navbar flex xl:flex-row flex-row-reverse xl:gap-[8vw] xl:w-auto sm:w-[50%] justify-between items-baseline"> 
+                    <div class="left-nav text-cyan-700 mb-[40px] font-bold text-[30px]">
                         StudentRooms
                     </div>
                     <div class="navlinks hidden xl:flex gap-5 text-grey-100">
@@ -21,14 +22,15 @@
                         <a href="#" class="">About</a>
                         <a href="#" class="">Contact</a>
                     </div>    
-                    <div id="menuBtn" onclick="memuVisible()" class="menu cursor-pointer xl:hidden mt-3 ">
-                        <box-icon name='menu'></box-icon>
+                    <div id="menuBtn" onclick="memuVisible()" onblur="" class="menu flex items-end absolute left-[5vw] cursor-pointer xl:hidden">
+                        <box-icon class="size-[40px]" name='menu'></box-icon>
+                        <span class="material-symbols-outlined text-[40px] absolute hidden close">close</span>
                     </div>
             </div>
             
             
                 <!-- Right sidebar -->
-            <div id="right" class="w-[35vw] gap-4 text-white flex text-sm bg-blue-900 absolute -z-100 tracking-wider right-0 top-0 h-[92vh] py-10 -pl-10 py-[55px] justify-center">
+            <div id="right" class="w-[35vw] gap-4 text-white flex text-sm bg-blue-900 absolute -z-100 tracking-wider right-0 top-0 h-[92vh] py-14 -pl-10  justify-center">
                     <div class="h-[65px]"><a href="./pages/login.html" class="button px-14 py-[14px] items-center justify-center  hover:bg-white hover:text-blue-900">Login</a></div>
                     <div class=""><a href="./pages/SignIn.html" class="button px-10 py-3 items-center justify-center border-solid border-2 border-white-50 hover:bg-white hover:text-blue-900" >Sign Up</a></div>
             </div>
