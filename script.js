@@ -72,7 +72,7 @@ function memuVisible() {
 //     navlinks.classList.add('hidden');
 // }
 
-menuBtN.click()
+menuBtN.cck()
 
 
 
