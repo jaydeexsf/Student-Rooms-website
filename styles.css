@@ -71,3 +71,42 @@ a:hover {
 .active {
     color: gray;
 }
+
+@media (max-width:1024px) {
+    .logo-text {
+      display: none;
+    }
+
+    .logo {
+        position: absolute;
+        left: 35%;
+        top: 23px;
+        display:inline;
+    }
+
+    .rightbtn {
+        padding-left: 190px;
+        padding-right: 180px;
+        padding-bottom: 100vw;
+    }
+
+    .menu {
+        position: absolute;
+        right: 2vw;
+        top: 23px;
+    }
+
+
+    .sign-log {
+        display: none;
+    }
+
+    .signin-sm {
+    display: block;
+    }
+}
+
+
+.signin-sm {
+
+}

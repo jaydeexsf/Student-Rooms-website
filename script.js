@@ -58,7 +58,7 @@ const closeIcon= document.getElementById('closeIcon');
 function memuVisible() {
    
     if (window.innerWidth <  1280) {
-    navlinks.className = 'flex flex-col gap-[10px] xl:flex xl:flex-row bg-blue-900 absolute xl:gap-[40px] text-white left-[5vw] rounded-xl xl:top-8 xl:left-[25%] top-[85px] py-[20px] px-16';
+    navlinks.className = 'flex rightbtn flex-col gap-[10px] xl:flex xl:flex-row bg-blue-900 absolute xl:gap-[40px] text-white left-[5vw] rounded-xl xl:top-8 xl:left-[25%] top-[100px] py-[20px] px-16';
     // navlinks.innerHTML = `  <a href="#" class="active">Home</a>
     //                         <a href="#" class="">Rooms</a>
     //                         <a href="#" class="">Pricing</a>
@@ -74,10 +74,11 @@ function memuVisible() {
 
 function menuInVisible () {
     navlinks.classList.add('hidden');
-
-menuBtN.click()
-
+    closeIcon.classList.add('hidden');
+    menuIcon.classList.remove('hidden');
+}
 
 
 console.log(window.innerWidth);
 console.log('hi');
+console.log(492/2)
