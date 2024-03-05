@@ -75,9 +75,8 @@ function memuVisible() {
 function menuInVisible () {
     navlinks.classList.add('hidden');
 
-    closeIcon.classList.add('hidden');
-    menuIcon.classList.remove('hidden');
-}
+menuBtN.click()
+
 
 
 console.log(window.innerWidth);
