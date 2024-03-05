@@ -79,7 +79,7 @@ a:hover {
 
     .logo {
         position: absolute;
-        left: 46%;
+        left: 48%;
         top: 25px;
         display:inline;
     }
@@ -178,4 +178,8 @@ a:hover {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+@media (max-width:640px) {
+    
 }
