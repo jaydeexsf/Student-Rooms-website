@@ -12,19 +12,19 @@
     <section class="main-home px-[5vw] h-[93vh] py-10">
         <nav class="whitespace-nowrap flex items-center">
             <div class="navbar flex xl:flex-row flex-row-reverse xl:gap-[8vw] xl:w-auto sm:w-[50%] justify-between items-baseline"> 
-                    <div class="left-nav text-cyan-700 mb-[40px] font-bold text-[30px]">
+                    <div class="left-nav text-cyan-700 mb-[40px] hover: font-bold text-[30px]">
                         StudentRooms
                     </div>
-                    <div class="navlinks hidden xl:flex gap-5 text-grey-100">
+                    <div class="navlinks hidden xl:flex gap-5 text-grey-100  || flex flex-col gap-[10px] xl:flex xl:flex-row bg-blue-900 absolute xl:gap-[40px] text-white left-[5vw] rounded-xl xl:top-8 xl:left-[25%] top-[85px] py-[20px] px-[2vw]">
                         <a href="#" class="active">Home</a>
                         <a href="#" class="">Rooms</a>
                         <a href="#" class="">Pricing</a>
                         <a href="#" class="">About</a>
                         <a href="#" class="">Contact</a>
                     </div>    
-                    <div id="menuBtn" onclick="memuVisible()" onblur="" class="menu flex items-end absolute left-[5vw] cursor-pointer xl:hidden">
-                        <box-icon id="menuIcon" class="size-[40px]" name='menu'></box-icon>
-                        <span id="closeIcon" class="material-symbols-outlined text-[40px] absolute hidden close top-[5px]">close</span>
+                    <div id="menuBtn" class="menu flex items-end absolute left-[5vw] cursor-pointer xl:hidden">
+                        <box-icon class="menu flex items-end size-[40px] cursor-pointer xl:hidden" onclick="memuVisible()" onblur="" id="menuIcon" name='menu'></box-icon>
+                        <span onclick="menuInVisible()" id="closeIcon" class="material-symbols-outlined text-[40px] absolute hidden close top-[5px]">close</span>
                     </div>
             </div>
             

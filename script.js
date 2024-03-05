@@ -52,28 +52,32 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 const navlinks = document.querySelector('.navlinks');
-const menuBtN = document.getElementById('menuBtn');
 const menuIcon = document.getElementById('menuIcon');
 const closeIcon= document.getElementById('closeIcon');
 
 function memuVisible() {
-    navlinks.className = 'flex flex-col gap-[10px] bg-blue-900 absolute text-white left-[5vw] rounded-xl top-[85px] py-4 px-12';
-    navlinks.innerHTML = `  <a href="#" class="active">Home</a>
-                            <a href="#" class="">Rooms</a>
-                            <a href="#" class="">Pricing</a>
-                            <a href="#" class="">About</a>
-                            <a href="#" class="">Contact</a>`
+   
+    if (window.innerWidth <  1280) {
+    navlinks.className = 'flex flex-col gap-[10px] xl:flex xl:flex-row bg-blue-900 absolute xl:gap-[40px] text-white left-[5vw] rounded-xl xl:top-8 xl:left-[25%] top-[85px] py-[20px] px-16';
+    // navlinks.innerHTML = `  <a href="#" class="active">Home</a>
+    //                         <a href="#" class="">Rooms</a>
+    //                         <a href="#" class="">Pricing</a>
+    //                         <a href="#" class="">About</a>
+    //                         <a href="#" class="">Contact</a>`
 
     closeIcon.classList.remove('hidden');
     menuIcon.classList.add('hidden');
+    } else {
+        navlinks.className="navlinks hidden xl:flex gap-5 text-grey-100";
+    }
 }
 
-// function menuInVisible () {
-//     navlinks.classList.add('hidden');
-// }
+function menuInVisible () {
+    navlinks.classList.add('hidden');
 
-menuBtN.click()
-
+    closeIcon.classList.add('hidden');
+    menuIcon.classList.remove('hidden');
+}
 
 
 console.log(window.innerWidth);
