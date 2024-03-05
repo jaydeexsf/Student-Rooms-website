@@ -58,7 +58,7 @@ const closeIcon= document.getElementById('closeIcon');
 function memuVisible() {
    
     if (window.innerWidth <  1280) {
-    navlinks.className = 'flex rightbtn flex-col gap-[10px] xl:flex xl:flex-row bg-blue-900 absolute xl:gap-[40px] text-white left-[5vw] rounded-xl xl:top-8 xl:left-[25%] top-[100px] py-[20px] px-16';
+    navlinks.className = 'flex rightbtn flex-col gap-[10px] xl:flex xl:flex-row bg-blue-900 absolute xl:gap-[40px] text-white left-[5vw] rounded-xl xl:top-8 xl:left-[25%] top-[100px] py-[20px] px-8';
     // navlinks.innerHTML = `  <a href="#" class="active">Home</a>
     //                         <a href="#" class="">Rooms</a>
     //                         <a href="#" class="">Pricing</a>
