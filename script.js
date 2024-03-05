@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('loginForm');
     const loginMessage = document.getElementById('loginMessage');
 
-    loginForm.addEventListener('submit', function(event) {
-        event.preventDefault();
+    loginForm.addEventListener('submit', function(eventi) {
+        eventi.preventDefault();
 
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
@@ -72,12 +72,17 @@ function memuVisible() {
     }
 }
 
+const strictImg = document.getElementById('strictImg');
+
+strictImg.onscroll(() => {
+    strictImg.classList.add('move');
+})
+
 function menuInVisible () {
     navlinks.classList.add('hidden');
     closeIcon.classList.add('hidden');
     menuIcon.classList.remove('hidden');
 }
-
 
 console.log(window.innerWidth);
 console.log('hi');

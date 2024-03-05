@@ -180,6 +180,71 @@ a:hover {
     100% { background-position: 0 0; }
 }
 
-@media (max-width:640px) {
-    
+@media (max-width:768px) {
+    .ydw {
+        display: none;
+    }
+
+    .location {
+        margin-top: 30px;
+    }
+
+    .br-large p{
+        font-size: 15px;
+    }
+
+    /* .here {
+        font-size: 3vw;
+        width: 70%;
+    } */
+}
+
+@media (max-width: 640px) {
+    .some-s {
+        display: none;
+    }
+
+    .especially {
+        display: none;
+    }
+
+    .here {
+        display: none;
+    }
+}
+
+.image-text {
+    position: relative;
+}
+
+.image-text h3 {
+    font-size: 20px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    font-weight: 550;
+}
+
+.image-text p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -3px;
+}
+
+.text {
+    position: absolute;
+    background-color: green;
+    bottom: -50px;
+    left: 15%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.move {
+    transition: transform 2s linear;
+    transform: translateX(100px);
 }
