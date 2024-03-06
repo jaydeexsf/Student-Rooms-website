@@ -105,6 +105,15 @@ a:hover {
     display: block;
     }
 
+    .main-home {
+        height:72vh;
+    }
+
+    .br-large {
+        width: 80%;
+    }
+
+    
 }
 
 
