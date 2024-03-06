@@ -113,6 +113,11 @@ a:hover {
         width: 80%;
     }
 
+    .footer-in {
+        padding-left: 5vw;
+
+    }
+
     
 }
 
@@ -202,6 +207,15 @@ a:hover {
         font-size: 15px;
     }
 
+    .foot-img {
+        display: none;
+    }
+
+    .sub {
+        margin-bottom: 30px;
+    }
+
+    
     /* .here {
         font-size: 3vw;
         width: 70%;
@@ -219,6 +233,18 @@ a:hover {
 
     .here {
         display: none;
+    }
+
+    .large-some {
+        font-size: 25px;
+    }
+
+    .foot-img {
+        display: none;
+    }
+
+    .footer-in {
+        gap: 60px;
     }
 }
 
@@ -257,4 +283,14 @@ a:hover {
 .move {
     transition: transform 2s linear;
     transform: translateX(100px);
+}
+
+.footer-in {
+   display: grid;
+   grid-template-columns:20vw 20vw 20vw 20vw ;
+   
+}
+
+.list-disc a:hover{
+    background-color: #48ff00;
 }
