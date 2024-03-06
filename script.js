@@ -158,9 +158,6 @@ function moveElementsRight(pixels, interval) {
 //     }
 // });
 
-
-
-
 console.log(window.innerWidth);
 console.log('hi');
 console.log(492/2)
