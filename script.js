@@ -74,15 +74,90 @@ function memuVisible() {
 
 const strictImg = document.getElementById('strictImg');
 
-strictImg.onscroll(() => {
-    strictImg.classList.add('move');
-})
-
 function menuInVisible () {
     navlinks.classList.add('hidden');
     closeIcon.classList.add('hidden');
     menuIcon.classList.remove('hidden');
 }
+
+let leftValue = 0;
+
+function moveElementsRight(pixels, interval) {
+    const elements = document.querySelectorAll('.image-text');
+    elements.forEach((element) => {
+        let rightValue = 0;
+        const moveRight = setInterval(() => {
+            leftValue += pixels;
+            element.style.transform = `translateX(${leftValue}px)`;
+        }, interval);
+
+        // Stop moving after a certain time
+        setTimeout(() => {
+            clearInterval(moveRight);
+            leftValue = 0;
+        }, 3000); 
+    });
+}
+
+
+// Function to move elements to the left
+
+const elements = document.querySelectorAll('.image-text');
+
+function moveElementsLeft(pixels, interval) {
+    const elements = document.querySelectorAll('.image-text');
+    elements.forEach((element) => {
+        
+        const moveLeft = setInterval(() => {
+            leftValue -= pixels;
+            element.style.transform = `translateX(${leftValue}px)`;
+        }, interval);
+
+        // Stop moving after a certain time
+        setTimeout(() => {
+            clearInterval(moveLeft);
+        }, 35000); // Change 5000 to the desired time in milliseconds
+    });
+}
+
+setTimeout(() => 
+    {moveElementsRight(1, 20)}, 35000
+)
+
+setTimeout(() => {
+    leftValue = 0;
+    moveElementsRight(0, 0)
+    element.style.transform = `translateX(${leftValue}px)`;
+}, 41000);
+
+moveElementsLeft(20, 3000)
+
+// Your moveElementsLeft and moveElementsRight functions
+
+let hoverElement = document.querySelector('.image-e');
+let animationPaused = false;
+
+hoverElement.addEventListener('mouseenter', () => {
+    // Stop the animation when hovering
+    if (!animationPaused) {
+        clearInterval(leftValue);
+        clearInterval(leftValue);
+        animationPaused = true;
+        hoverElement.classList.add('hidden');
+    }
+});
+
+hoverElement.addEventListener('mouseleave', () => {
+
+    if (animationPaused) {
+        moveElementsLeft(1, 20);
+        moveElementsRight(1, 20);
+        animationPaused = false;
+    }
+});
+
+
+
 
 console.log(window.innerWidth);
 console.log('hi');
