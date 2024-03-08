@@ -168,7 +168,7 @@ function bringLoading() {
     setTimeout(() =>{
         load.classList.add('hidden')
         load.classList.add('transition-opacity');
-        window.location.href.href = './pages/SignIn.html';
+        window.location.href = './pages/SignIn.html';
     }, 3000)
 }
 
