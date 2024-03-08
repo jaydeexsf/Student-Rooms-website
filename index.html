@@ -10,6 +10,14 @@
     <title>Rooms Rental</title>
 </head>
 <body class="">
+
+      <div id="load" class='flex hidden space-x-2 justify-center items-center opacity-80 bg-white h-screen  dark:invert'>
+        <span class='sr-only'>Loading...</span>
+        <div class='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.3s]'></div>
+        <div class='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.15s]'></div>
+        <div class='h-8 w-8 bg-black rounded-full animate-bounce'></div>
+     </div>
+
     <section class="main-home px-[5vw] h-[70vh] md:h-[93vh] min-h-[600px] py-10">
         <nav class="whitespace-nowrap flex items-center">
             <div class="navbar sm:order-2 flex xl:flex-row sm:mb-[20px] lg:flex-row-reverse xl:gap-[8vw] xl:w-auto sm:w-[50%] justify-between items-baseline"> 
@@ -31,7 +39,7 @@
             </div>
 
             <div class="signin-sm px-[20px] flex justify-center items-center hover:cursor-pointer bg-blue-950 lg:hidden text-white py-[8px] rounded-md border-2 border-solid border-blue-900">
-                <a href="./pages/login.html">sign in</a>
+                <a id="signIn" onclick="bringLoading()">sign in</a>
             </div>
                 
                 <!-- Right sidebar -->

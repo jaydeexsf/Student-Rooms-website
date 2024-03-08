@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body id="loading">
-    <div class='flex space-x-2 justify-center items-center bg-white h-screen dark:invert'>
+    <div id="load" class='flex hidden space-x-2 justify-center items-center opacity-80 bg-white h-screen  dark:invert'>
         <span class='sr-only'>Loading...</span>
          <div class='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.3s]'></div>
        <div class='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.15s]'></div>
@@ -16,11 +16,11 @@
 </div>
 
 <script>
-    const loading = document.getElementById('loading');
+//     const loading = document.getElementById('loading');
 
-setInterval(() => {
-    window.location.href = "./indexS.html";
-}, 3000);
+// setInterval(() => {
+//     window.location.href = "./indexS.html";
+// }, 3000);
 
 </script>
 

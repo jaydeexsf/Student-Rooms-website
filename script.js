@@ -158,6 +158,20 @@ function moveElementsRight(pixels, interval) {
 //     }
 // });
 
+const load = document.getElementById('load');
+const sign =document.getElementById('signIn');
+
+function bringLoading() {
+    load.classList.remove('hidden');
+    load.classList.add('z-10')
+
+    setTimeout(() =>{
+        load.classList.add('hidden')
+        load.classList.add('transition-opacity');
+        window.location.href.href = './pages/SignIn.html';
+    }, 3000)
+}
+
 console.log(window.innerWidth);
 console.log('hi');
 console.log(492/2)
