@@ -8,6 +8,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     box-sizing: border-box;
+    background: linear-gradient(to right, #fffcfe, #f5d0fe);
+    overflow-x:hidden;
 }
 
 /* .navlinks a::before {
@@ -297,4 +299,21 @@ a:hover {
 
 .foot-in a:hover {
     background-color: #48ff00;
+}
+
+#UserEmail {
+    background-color:transparent;
+}
+
+
+#UserEmail:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: -10px;
+    background-color: #00ffd5;
+    left: 20px;
+    color: red;
+    width: 50px;
+    height: 10px;
 }
