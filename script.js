@@ -172,6 +172,12 @@ function bringLoading() {
     }, 3000)
 }
 
-console.log(window.innerWidth);
-console.log('hi');
-console.log(492/2)
+const cookies = document.getElementById('cookies');
+
+cookies.addEventListener('load', () => {
+    setTimeout(()=>{
+    cookies.classList.remove('hidden');
+    }
+    ), 1000
+})
+
