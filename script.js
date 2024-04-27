@@ -181,3 +181,4 @@ cookies.addEventListener('load', () => {
     ), 1000
 })
 
+console.log(window.innerWidth);
