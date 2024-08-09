@@ -129,87 +129,55 @@
         </div>
     </section>
 
-    <section id="some-selcted-rooms" class="some-selected h-[80vh] px-[5vw]">
-        <div class="top-selected-container flex justify-between">
-            <dov class="left-selected">
-                <div class="large-some xl:text-[40px] text-[3vw] font-semibold"><span class="some-s">Some Of Our </span><br class="md:hidden sm:hidden text-[40px]"> Selected Rooms <br> <span class="especially">Especially</span> For You</div>
-                <p class="here max-w-[530px] width-[20vw] text-gray-500 md:text-[20px]">Here's a selection of our popular rooms for potential new residents like you, let's choose</p>
-            </dov>
-
-            <div class="right-selected flex flex-col items-end mt-4 gap-4">
-                <div class="r-text whitespace-nowrap underline"><a href="#">Find more than 500 Rooms</a></div>
-                <form action="moreRooms.html">
-                    <button id="more-rooms" type="submit" class="glow-on-hover lg:py-8 flex justify-center items-center rounded-[0]">More Rooms</button>
-                </form>
-                <!-- <div class="more-rooms border-2 flex justify-center items-center w-[90%] font-semibold cursor-pointer hover:bg-blue-600 hover:text-white text-blue-600 py-4 border-blue-600">More Rooms</div> -->
-            </div>
-        </div>
-        
-        <div class="bottom-selected-container mt-12 flex gap-8 relative">
-              
-            <div class="image-text ">
-                <div class="text">
-                    <h3>South Africa Limpopo Mankweng <br>university road</h3>
-                    <p><span class="material-symbols-outlined">
-                        location_on
-                        </span>
-                        Gate 2, Stand-No 710
-                    </p>
-                </div>
-
-                <div id="strictImg" unselected="on" class="image-selected min-w-[250px] w-[550px] xl:w-[550px]"><img src="images/single-bed-room-1.webp" alt="" class="w-full h-96 object-cover"></div>
-               
-                <div onclick="location.href='https://google.com';" class="text-on-img flex justify-center flex-col items-center bg-blue-950 text-white cursor-pointer py-[20px] hover:text-purple-500 px-[30px] absolute rounded-2xl top-[35%] left-[33%]">
-                  <span class="material-symbols-outlined">  
-                    open_in_new
-                  </span>
-                  <div class="text-2">Show More Details</div>
-                </div>
-              
+    <section id="selected-rooms" class="selected-rooms-container py-16 px-8 lg:px-16 bg-gray-900 text-white">
+      <div class="header-container flex flex-col md:flex-row justify-between items-center">
+          <div class="left-content mb-8 md:mb-0">
+              <h2 class="text-3xl md:text-4xl font-bold mb-2">
+                  <span class="highlight">Some Of Our</span><br>
+                  Selected Rooms<br>
+                  <span class="highlight-special">Especially</span> For You
+              </h2>
+              <p class="text-gray-400 max-w-xl text-lg">
+                  Here's a selection of our popular rooms for potential new residents like you. Explore and choose your ideal room.
+              </p>
+          </div>
+          <div class="right-content flex flex-col items-end">
+              <a href="#" class="text-blue-400 underline mb-4">Find more than 500 Rooms</a>
+              <a href="moreRooms.html" class="btn-more-rooms">More Rooms</a>
+          </div>
+      </div>
+      
+      <div class="rooms-container mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Room Item -->
+          <div class="room-item relative bg-gray-800 rounded-lg overflow-hidden">
+              <img src="images/single-bed-room-1.webp" alt="Room 1" class="w-full h-64 object-cover">
+              <div class="info-overlay absolute inset-0 flex flex-col justify-center items-center bg-blue-900 bg-opacity-75 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <span class="material-symbols-outlined text-3xl">open_in_new</span>
+                  <p class="text-lg mt-2">Show More Details</p>
               </div>
-
-            <div class="image-text">
-                <div class="text">
-                    <h3>South Africa Limpopo Mankweng <br>university road</h3>
-                    <p><span class="material-symbols-outlined">
-                        location_on
-                        </span>
-                        Gate 2, Stand-No 710
-                    </p>
-                </div>
-
-                <div class="image-selected min-w-[250px] w-[550px] xl:w-[550px]"><img src="images/bedroom-2.jpeg" alt="" class="w-full h-96 object-cover"></div>
-            </div>
-
-            <div class="image-text">
-                <div class="text">
-                    <h3>South Africa Limpopo Mankweng <br>university road</h3>
-                    <p><span class="material-symbols-outlined">
-                        location_on
-                        </span>
-                        Gate 2, Stand-No 710
-                    </p>
-                </div>
-
-                <div class="image-selected min-w-[250px] w-[550px] xl:w-[550px]"><img src="images/single-bed-room-3.jpeg" alt="" class="w-full h-96 object-cover"></div>
-            </div>
-
-            <div class="image-text">
-                <div class="text">
-                    <h3>South Africa Limpopo Mankweng <br>university road</h3>
-                    <p><span class="material-symbols-outlined">
-                        location_on
-                        </span>
-                        Gate 2, Stand-No 710
-                    </p>
-                </div>
-
-                <div class="image-selected min-w-[250px] w-[550px] xl:w-[550px]"><img src="images/single-bed-room-4.jpg" alt="" class="w-full h-96 object-cover"></div>
-            </div>
-
-        </div>
-
-    </section>
+              <div class="room-details p-4">
+                  <h3 class="text-xl font-semibold">South Africa Limpopo Mankweng</h3>
+                  <p class="text-gray-400">Gate 2, Stand-No 710</p>
+              </div>
+          </div>
+  
+          <!-- Repeat the room item structure for additional rooms -->
+          <div class="room-item relative bg-gray-800 rounded-lg overflow-hidden">
+              <img src="images/bedroom-2.jpeg" alt="Room 2" class="w-full h-64 object-cover">
+              <div class="info-overlay absolute inset-0 flex flex-col justify-center items-center bg-blue-900 bg-opacity-75 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <span class="material-symbols-outlined text-3xl">open_in_new</span>
+                  <p class="text-lg mt-2">Show More Details</p>
+              </div>
+              <div class="room-details p-4">
+                  <h3 class="text-xl font-semibold">South Africa Limpopo Mankweng</h3>
+                  <p class="text-gray-400">Gate 2, Stand-No 710</p>
+              </div>
+          </div>
+  
+          <!-- More room items here... -->
+      </div>
+  </section>
+  
 
     <section class="sub flex pl-[5vw] gap-4 items-center justify-between">
       <div class="sub-container col-span-4">
