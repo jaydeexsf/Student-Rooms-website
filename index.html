@@ -69,65 +69,72 @@
         
     </section>
    
-    <section id="" class="dream-room mt-4 h-[100vh] h-[100vh] min-h-[800px] pl-[5vw]">
-        <div class="first-d flex justify-between items-center">
-            <div class="">
-                <h1 class="br-large xl:text-[40px] sm:text-[3vw] font-semibold">Find your Dream Room Now <br class="hidden md:block">Search & Booking</h1>
-                <p class="w-[500px]">Immediently find your dream room and make varsity experience cooler and more productive than ever before</p>
-            </div>    
-            <img class="w-[30vw] md:flex hidden object-bottom object-cover h-[300px]" src="./images/chair-and-table.jpg" alt="" class="side">
-        </div>
-
-        <div class="find-img flex justify-between">
-            <div class="find">
-
-                <div class="location">
-                    <div class="problem md:w-[47vw] w-[150vw] flex justify-center max-w-[650px]  lg:max-w-[900px lg:min-h-[700px] lg:max-h-[900px] lg:h-[30vw]  max-h-[1000px] min-w-[300px] min-h-[400px] h-auto flex flex-col items-center justify-center mx-auto text-white px-6 py-8 bg-blue-900 nnn rounded-tl-[50px] rounded-br-[50px] shadow-md">
-                        <h2 class="text-2xl font-bold mb-4 flex justify-center mb-[6vh] lg:mt-[30px]">Find a Room</h2>
-                        <form action="/submit" class="w-full h-full lg:mt-[50px]" method="POST">
-                            <div class="grid grid-cols-2 gap-[3vw] justify-between items-between">
-                                <!-- Location -->
-                                <div class="w-[full] gap-8 col-span-2 flex items-baseline ">
-                                    <label for="location" class="block text-white">Location</label>
-                                    <select name="location" id="location" class="w-full pl-[10px] py-3 mt-2 bg-blue-500 opacity-90 outline-none focus:border-none focus:outline-none sm:text-sm">
-                                        <option value="Gate-1" selected>Gate 1</option>
-                                        <option value="Gate-2">Gate 2</option>
-                                        <option value="Gate-3">Gate 3</option>
-                                        <option value="motintane">Ga motintane</option>
-                                    </select>
-                                </div>
-                                <!-- Start Date -->
-                                <div>
-                                    <label for="start_date" class="block mt-4 text-white">Start Date</label>
-                                    <input type="date" id="start_date" name="start_date" class="w-full px-4 py-3 mt-2 bg-blue-500 opacity-90 outline-none focus:border-none focus:outline-none sm:text-sm">
-                                </div>
-                                <!-- End Date -->
-                                <div>
-                                    <label for="end_date" class="block text-white mt-4">End Date</label>
-                                    <input type="date" id="end_date" name="end_date" class="w-full px-4 py-3 mt-2 bg-blue-500 opacity-90 outline-none focus:border-none focus:outline-none sm:text-sm">
-                                </div>
-                                <!-- Checkbox -->
-                                <div class="col-span-2">
-                                    <input type="checkbox" id="terms" name="terms" class="mr-2">
-                                    <label for="terms" class="text-white mt-4">I agree to the <a class="underline">Terms of services</a> and <a href="" class="underline">Privacy policy</a> of <b class="tracking-wide text-lg">StudentRooms</b> company.</label>
-                                </div>
-                            </div>
-                            <!-- Submit Button -->
-                            <div class="mt-[4vh] lg:mt-[7vh] flex justify-center">
-                                <button type="submit" class="glow-on-hover w-[90%] px-4 py-3 bg-blue-950 text-white rounded-[2px] cursor-pointer hover:bg-white">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-                    
-                </div>
-
-            </div>
-            <div class="f-img flex mt-4 gap-4">
-                <img class="ydw w-[21vw] h-[20vw] md:block object-cover" src="./images/sofa.jpg" alt="">
-                <img class="ydw w-[21vw] h-[30vw] object-cover object-bottom" src="./images/singleBedRoom.jpg" alt="">
-            </div>
-        </div>
-    </section>
+    <section class="dream-room min-h-[800px] bg-gray-50 px-4 py-12 lg:px-16 lg:py-20">
+      <div class="flex flex-col lg:flex-row items-center lg:justify-between">
+          <div class="text-container lg:w-1/2 mb-8 lg:mb-0">
+              <h1 class="text-3xl lg:text-4xl font-semibold text-gray-900 leading-tight transition-transform duration-500 hover:translate-x-1">
+                  Find Your Dream Room Now<br class="hidden lg:block">Search & Booking
+              </h1>
+              <p class="mt-4 text-gray-600 max-w-lg transition-opacity duration-500 hover:opacity-80">
+                  Find your dream room instantly and enhance your varsity experience to be cooler and more productive than ever.
+              </p>
+          </div>
+          <img class="w-full lg:w-1/2 lg:h-[300px] object-cover hidden lg:block transition-transform duration-500 hover:scale-105" src="./images/chair-and-table.jpg" alt="Chair and table">
+      </div>
+  
+      <div class="flex flex-col lg:flex-row lg:justify-between mt-12">
+          <div class="find flex-1 lg:pr-8">
+              <div class="location bg-blue-900 text-white rounded-xl shadow-lg p-6 max-w-xl mx-auto transition-transform duration-500 hover:scale-105">
+                  <h2 class="text-2xl font-bold mb-6">Find a Room</h2>
+                  <form action="/submit" method="POST" class="space-y-4">
+                      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                          <!-- Location -->
+                          <div class="col-span-2">
+                              <label for="location" class="block text-white">Location</label>
+                              <select name="location" id="location" class="w-full px-3 py-2 bg-blue-500 text-white rounded-md outline-none focus:ring-2 focus:ring-blue-300 transition-transform duration-300 hover:scale-105">
+                                  <option value="Gate-1" selected>Gate 1</option>
+                                  <option value="Gate-2">Gate 2</option>
+                                  <option value="Gate-3">Gate 3</option>
+                                  <option value="motintane">Ga Motintane</option>
+                              </select>
+                          </div>
+                          <!-- Start Date -->
+                          <div>
+                              <label for="start_date" class="block text-white">Start Date</label>
+                              <input type="date" id="start_date" name="start_date" class="w-full px-3 py-2 bg-blue-500 text-white rounded-md outline-none focus:ring-2 focus:ring-blue-300 transition-transform duration-300 hover:scale-105">
+                          </div>
+                          <!-- End Date -->
+                          <div>
+                              <label for="end_date" class="block text-white">End Date</label>
+                              <input type="date" id="end_date" name="end_date" class="w-full px-3 py-2 bg-blue-500 text-white rounded-md outline-none focus:ring-2 focus:ring-blue-300 transition-transform duration-300 hover:scale-105">
+                          </div>
+                          <!-- Checkbox -->
+                          <div class="col-span-2 flex items-center">
+                              <input type="checkbox" id="terms" name="terms" class="mr-2">
+                              <label for="terms" class="text-white">
+                                  I agree to the <a href="#" class="underline">Terms of Service</a> and <a href="#" class="underline">Privacy Policy</a> of <b class="text-lg">StudentRooms</b>.
+                              </label>
+                          </div>
+                      </div>
+                      <!-- Submit Button -->
+                      <div class="flex justify-center mt-6">
+                          <button type="submit" class="w-full lg:w-auto px-6 py-3 bg-blue-950 text-white rounded-md hover:bg-blue-800 transition-transform duration-300 transform hover:scale-105">
+                              Submit
+                          </button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+  
+          <div id="images" class="f-img flex flex-col lg:flex-row mt-8 lg:mt-0 gap-4 flex-1">
+              <img class="w-full lg:w-1/2 h-[250px] object-cover rounded-md transition-transform duration-500 hover:scale-105" src="./images/sofa.jpg" alt="Sofa">
+              <img class="w-full lg:w-1/2 h-[250px] object-cover rounded-md transition-transform duration-500 hover:scale-105" src="./images/singleBedRoom.jpg" alt="Single bed room">
+          </div>
+      </div>
+  </section>
+  
+  
+  
 
     <section id="selected-rooms" class="selected-rooms-container py-16 px-8 lg:px-16 bg-gray-900 text-white">
       <div class="header-container flex flex-col md:flex-row justify-between items-center">
@@ -179,46 +186,44 @@
   </section>
   
 
-    <section class="sub flex pl-[5vw] gap-4 items-center justify-between">
-      <div class="sub-container col-span-4">
-        <div class="col-span-12">
-          <div>
-            <h2 class="text-[40px] font-bold text-gray-900 text-">Subs To News Letter</h2>
+  <section class="newsletter-subscription flex flex-col lg:flex-row pl-8 lg:pl-16 gap-8 items-center justify-between bg-gray-100 py-12">
+    <div class="text-container flex-1">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900">Subscribe to Our Newsletter</h2>
+        <p class="mt-4 text-gray-600 max-w-md">
+            Stay updated with the latest development news, tips, and exclusive content. Subscribe now for insights and resources to enhance your skills.
+        </p>
+    </div>
 
-            <p class="mt-4 w-[450px] text-gray-500 dark:text-gray-400">
-              Get Interesting News About Development Abd Tips From Us For Real Content That Can Read And Make Reference
-            </p>
-          </div>
-        </div>
-
-        <div class="col-span-1 mt-4 lg:col-span-3 lg:flex lg:items-end">
-          <form class="w-[500px] flex gap-4">
-            <label for="UserEmail" class="sr-only"> Email </label>
-
-            <div
-              class="border w-[500px] p-2 sm:flex sm:items-center sm:gap-4 border-2 border-solid border-blue-900"
-            >
-              <input
-                type="email"
-                id="UserEmail"
-                placeholder="Email Adress..."
-                class="w-full border-none bg-white sm:text-sm text-gray-900 bg-red-400 border-none outline-none"
-              />
+    <div class="form-container flex-1 flex items-center lg:items-end mt-8 lg:mt-0">
+        <form class="flex flex-col lg:flex-row gap-4 w-full lg:w-auto">
+            <div class="relative w-full">
+                <label for="user-email" class="sr-only">Email Address</label>
+                <input
+                    type="email"
+                    id="user-email"
+                    placeholder="Email Address..."
+                    class="w-full border-2 border-blue-600 rounded-md p-2 text-gray-900 placeholder-gray-500 outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
+                    required
+                />
             </div>
             <button
-                class=" glow-on-hover mt-1 w-[full] dark:bg-blue-950 hover:bg-blue-900 px-6 py-3 text-sm tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0"
-              >
+                type="submit"
+                class="mt-2 lg:mt-0 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md px-6 py-3 transition duration-300"
+            >
                 Subscribe
-              </button>
-          </form>
-        </div>
-      </div>
+            </button>
+        </form>
+    </div>
 
-      <div class="">
-        <p class="font-medium text-gray-900 dark:text-white"></p>
-        <div><img class="foot-img w-[500px] h-[300px] object-cover" src="images/pexels-photo-13871326.jpeg" alt=""></div>
-      </div>
-    </section>
+    <div class="image-container mt-8 lg:mt-0 flex justify-center lg:justify-end flex-1">
+        <img
+            class="w-full max-w-md h-auto object-cover rounded-md shadow-lg"
+            src="images/pexels-photo-13871326.jpeg"
+            alt="Newsletter Image"
+        />
+    </div>
+</section>
+
 
     <section class="footer">
         <footer class="bg-white dark:bg-gray-900">
